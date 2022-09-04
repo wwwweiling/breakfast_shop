@@ -1,0 +1,36 @@
+.online_four{
+    display: flex;
+    margin: 0 20px;
+    .online_four_wrap{
+        margin: 20px 10px;
+        flex:1;
+        .item_img{
+            width: 100%;
+            height:200px;
+            background-image: url(../img/food3.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .item_name{
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+        }
+        .item_item{
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        .item_more{
+            text-align: center;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            font-size: 14px;
+            a:hover{
+                background-color: $color1;
+                padding: 5px 20px;
+                opacity: 0.8;
+                // color: $color2;
+                }
+        }
+    }
+}    
