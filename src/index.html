@@ -11,21 +11,23 @@
 <body>
     <header class="container">
         @@include('include/nav.html')
-        <div>
-            <div class="banner"></div>
+        <div class="banner">
+                <div class="banner_food"></div>
         </div>
     </header>
         <div class="main container">
             <div class="online_wrap">
                 <div class="online_one">
-                    <div><a>線上點餐</a></div>
-                    <div><a>線上菜單</a></div>
+                    <a href="#">線上點餐</a>
+                    <a href="#">線上菜單</a>
                 </div>    
                 <div class="online_two">
-                    <div class="left"></div>
+                    <div class="left">
+                        <div class="left_img"><a href="#"></a></div>
+                    </div>
                     <div class="right">
-                        <div>不管你睡的多晚起的多晚<br>晨之美永遠在這裡歡迎光臨</div>
-                        <div>美好的早晨就是要來一份不一樣的早點<br>讓人吃了神清氣爽讚不絕口的好滋味</div>
+                        <div class="right_top">不管你睡的多晚起的多晚<br>晨之美永遠在這裡歡迎光臨</div>
+                        <div class="right_bottom">美好的早晨就是要來一份不一樣的早點<br>讓人吃了神清氣爽讚不絕口的好滋味</div>
                     </div>
                 </div>
                 <div class="online_three">
@@ -33,19 +35,16 @@
                         <div class="left_img"><a href="#"></a></div>
                     </div>
                     <div class="right">
-                        <div class="food_name">招牌薯餅蛋吐司</div>
-                        <div class="food_item">超人氣餐點，搭配獨門醬汁+酥脆吐司不點可以嗎？</div>
+                        <div class="food_top">招牌薯餅蛋吐司</div>
+                        <div class="food_bottom">超人氣餐點，搭配獨門醬汁+酥脆吐司不點可以嗎？</div>
                         <div class="button"><a href="#">查看更多</a></div>
                     </div>
                 </div>
                 <div class="online_four">
                     <!--學習用@@包*3-->
-                    <div class="online_four_wrap">
-                        <div class="item_img"></div>
-                        <div class="item_name"></div>
-                        <div class="item_item"></div>
-                        <div class="item_more"><a href="#">查看更多<a></div>
-                    </div>
+                    @@include('include/online_four.html')
+                    @@include('include/online_four.html')
+                    @@include('include/online_four.html')
                 </div>
             </div>
             <div class="news">

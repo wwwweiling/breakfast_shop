@@ -1,5 +1,6 @@
 @import "_var";
 @import "_nav";
+@import "_online_four";
 body{
     a{
         text-decoration: none;
@@ -7,3 +8,158 @@ body{
     }
 }
 
+header{
+    position: relative;
+    .banner{
+        width:100%;
+        height:100vh;
+        .banner_food{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/food1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: 100px;
+        }
+    }
+}
+
+.main{
+
+    .online_wrap{
+        position: relative;
+        .online_one{
+            text-align: center;
+            a{
+                display: inline-block;
+                padding: 10px 30px;
+                margin: 0 50px;
+                background-color: $color1;
+                color:$color2;
+                border-radius: 30px;
+            &:hover{
+                background-color: $color3;
+            }
+            }     
+        }
+        .online_two{
+            width: 100%;
+            height: 100%;
+            background-color: $color2;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            .left{
+                margin:0 20px;
+                width:50%;
+                flex:1;
+                .left_img{
+                    background-image: url(../img/food4.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 500px;
+                    height: 500px;
+                    position: relative;
+                      &::before{
+                        content: "";
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 60%, black 100%);
+                        width:100%;
+                        height:100%;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                      }
+                }
+            }
+            .right{
+                flex:2;
+                .right_top{
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: bold;
+                    letter-spacing: 10px;
+                    line-height: 35px;
+                }
+                .right_bottom{
+                    font-size:16px;
+                    text-align: center;
+                    line-height: 24px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .online_three{
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/bg2.svg);
+            display: flex;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 2;
+            &::before{
+                content: "";
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(240, 240, 240) 50%);
+                width:100%;
+                height:100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            .left{
+                margin:0 20px;
+                width:50%;
+                flex:1;
+                .left_img{
+                    background-image: url(../img/food5.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 500px;
+                    height: 500px;
+                    position: relative;
+                }
+            }
+            .right{
+                flex:2;
+                .food_top{
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                }
+                .food_bottom{
+                    font-size:16px;
+                    text-align: center;
+                    line-height: 24px;
+                    letter-spacing: 2px;
+                }
+                .button{
+                    text-align: center;
+                    a{
+                        display: inline-block;
+                        background: white;
+                        padding: 10px 60px;
+                        margin-top: 30px;
+                        font-size: 15px;
+                        letter-spacing: 3px;
+                    &:hover{
+                        background-color: $color1;
+                        color: $color2;
+                    }
+                    }
+                }
+            }    
+        }
+    }
+}
