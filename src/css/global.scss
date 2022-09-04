@@ -1,0 +1,25 @@
+@import "_normalize";
+@import "_recet";
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 1280px; //(可調整/看設計師給的)
+    margin: 0 auto;
+  }
+
+  //選擇器，選取時會有顏色
+  ::selection{
+    // color: red;
+    // background-color: green;
+}
