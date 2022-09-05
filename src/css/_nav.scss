@@ -3,7 +3,10 @@
 nav.nav{
     .nav_wrap{
         display: flex;
-        padding: 20px;
+        padding: 20px 20px 10px 20px;
+        &.nav_wrap2{
+            padding: 10px 20px 0px 20px
+        }
         .logo{
             background-image: url(../img/logo1.svg);
             width:100%;
@@ -11,15 +14,18 @@ nav.nav{
             background-position: left;
             background-repeat: no-repeat;
             flex:1;
+        &.logo2{
+            height:50px;
+            z-index: 9998;
+        }
         }
         .right{
             flex:2;
             text-align: center;
-            padding-top: 30px;
             div.menu{
-                display: inline-block;
                 position: relative;
-                padding-bottom:20px;
+                padding-top: 20px;
+                display: inline-block;
                 a{
                     display: inline-block;
                     padding: 0 30px;
@@ -32,6 +38,8 @@ nav.nav{
                     position: absolute;
                     z-index: 9;
                     display: none;
+                    width: 150px;
+                    left: -5px;
                     &::before{
                         content: "";
                         height:30px;
@@ -39,7 +47,7 @@ nav.nav{
                         background-color: $color1;
                         display: block;
                         position: absolute;
-                        right: 60px;
+                        left: 65px;
                         top:-20px;
                         z-index: -1;  
                     }
@@ -52,9 +60,23 @@ nav.nav{
                         background-color: $color2;
                         }
                         
-                    }
+                    } 
                 }
             }
+            div.menu:hover .menu_ul{
+                display: block;
+            }   
         }
     }
 }
+.fixed{
+    width:100%;
+    z-index: 9999;
+    position: fixed;
+    background-color: white;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+

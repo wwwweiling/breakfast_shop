@@ -1,6 +1,7 @@
 @import "_var";
 @import "_nav";
 @import "_online_four";
+@import "_footer";
 body{
     a{
         text-decoration: none;
@@ -21,7 +22,7 @@ header{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            top: 100px;
+            // top: 100px;
         }
     }
 }
@@ -32,6 +33,7 @@ header{
         position: relative;
         .online_one{
             text-align: center;
+            padding: 20px 0;
             a{
                 display: inline-block;
                 padding: 10px 30px;
@@ -48,7 +50,6 @@ header{
             width: 100%;
             height: 100%;
             background-color: $color2;
-            margin-top: 20px;
             display: flex;
             align-items: center;
             .left{
@@ -95,8 +96,7 @@ header{
         }
         .online_three{
             width: 100%;
-            height: 100vh;
-            background-image: url(../img/bg2.svg);
+            // background-image: url(../img/bg2.svg);
             display: flex;
             align-items: center;
             background-repeat: no-repeat;
@@ -120,7 +120,7 @@ header{
                 width:50%;
                 flex:1;
                 .left_img{
-                    background-image: url(../img/food5.png);
+                    background-image: url(../img/food7.png);
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -148,14 +148,14 @@ header{
                     text-align: center;
                     a{
                         display: inline-block;
-                        background: white;
+                        background: $color1;
+                        color: $color2;
                         padding: 10px 60px;
                         margin-top: 30px;
                         font-size: 15px;
                         letter-spacing: 3px;
                     &:hover{
-                        background-color: $color1;
-                        color: $color2;
+                        background-color: $color3;
                     }
                     }
                 }
