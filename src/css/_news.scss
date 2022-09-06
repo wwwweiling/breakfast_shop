@@ -1,0 +1,102 @@
+@import "_var";
+.news{
+    .news_wrap{
+        padding-bottom: 10px;
+        background-color: #000;
+        .news_inner{
+            display: flex;
+            .left{
+                .target_wrap{
+                    width: 70px;
+                    height: 220px;
+                    margin-left: 30px;
+                    margin-bottom: 10px;
+                    background-color: $color1;
+                    position: relative;
+                    .target{
+                        writing-mode: vertical-lr;
+                        font-size: 30px;
+                        letter-spacing: 3px;
+                        color:white;
+                        padding: 5px 17px;
+                    }
+                    .target_plus{
+                        width:70px;
+                        height:60px;
+                        background-color:$color3;
+                        position: absolute;
+                        bottom: 0;
+                        a{
+                            padding: 30px 35px;
+                            display: block;
+                            // position: absolute;
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 20px;
+                            height:1px;
+                            background-color: $color2;
+                            opacity: 0.5;
+                            position: absolute;
+                            position: absolute;
+                            left: 22px;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height:20px;
+                            background-color: $color2;
+                            opacity: 0.5;
+                            position: absolute;
+                            top: 20px;
+                            left: 31px;
+                        }        
+                        }
+                    }
+                }
+            }    
+            .center{
+                flex-grow: 2;
+                display: flex;
+                .two_item{
+                    margin-left: 20px;
+                    position: relative;
+                    .item_zoom{
+                        .news_img{
+                            width:280px;
+                            height:280px;
+                            a{
+                                display: block;
+                                background-image: url(../img/food7.png);
+                                width: 100%;
+                                height:100%;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                
+                    .date{
+                        background:$color3;
+                        color: white;
+                        display: inline-block;
+                        padding: 5px 20px;
+                        position: absolute;
+                        bottom: 55px;
+                    }
+                    .item_text_two{
+                        //使用JQUREY使其顯示兩行
+                        width: 280px;
+                        margin-top: 20px;
+                        letter-spacing: 1px;
+                    }    
+                }
+            }
+            .right{
+                flex-grow: 1;
+            }
+        }
+    }
+}
