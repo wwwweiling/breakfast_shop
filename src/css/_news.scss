@@ -25,10 +25,10 @@
                         background-color:$color3;
                         position: absolute;
                         bottom: 0;
-                        a{
+                        .target_plus_item{
                             padding: 30px 35px;
                             display: block;
-                            // position: absolute;
+                            position: relative;
                         &::before{
                             content: "";
                             display: block;
@@ -36,7 +36,6 @@
                             height:1px;
                             background-color: $color2;
                             opacity: 0.5;
-                            position: absolute;
                             position: absolute;
                             left: 22px;
                         }
@@ -52,7 +51,30 @@
                             left: 31px;
                         }        
                         }
+                        .target_plus_block{
+                            display: none;
+                            writing-mode: vertical-lr;
+                            width: 100%;
+                            height: 100px;
+                            background: $color1;
+                            
+                            a{
+                                color: white;
+                                width: 70px;
+                                display: block;
+                                padding: 2px 22px;
+                                letter-spacing: 2px;
+                            }
+                            
+                        }  
                     }
+                    .target_plus:hover .target_plus_block{
+                        //緩入緩出
+                        display: block;
+
+
+
+                    } 
                 }
             }    
             .center{
