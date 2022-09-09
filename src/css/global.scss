@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_recet";
+@import "_var";
 
 html {
     -webkit-box-sizing: border-box;
@@ -20,6 +21,6 @@ html {
 
   //選擇器，選取時會有顏色
   ::selection{
-    // color: red;
-    // background-color: green;
+    color:$color1;
+    background-color: $color3;
 }

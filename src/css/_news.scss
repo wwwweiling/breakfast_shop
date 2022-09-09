@@ -85,6 +85,7 @@
                         .news_img{
                             width:280px;
                             height:280px;
+                            overflow: hidden;
                             a{
                                 display: block;
                                 background-image: url(../img/food2.jpg);
@@ -147,22 +148,12 @@
                         left: 0;
                         margin-top: 5px;
                     }
-                    &::after{
-                        content: "";
-                        display: block;
-                        width: 120px;
-                        height: 30px;
-                        background: #D96149;
-                        position: relative;
-                        bottom: 25px;
-                        right: 20px;
-                        z-index: -1;;
-                    }
+
                     a{
-                        color: white;
                         padding: 5px 20px;
                         position: relative;
                         left: -20px;
+                        top:-5px
                     }
 
                 }
@@ -170,3 +161,66 @@
         }
     }
 }
+@media (max-width:992px) {
+    .news{
+        .news_wrap{
+            .news_inner{
+                flex-direction: column;
+                align-items: center;
+                .left{
+                    .target_wrap{
+                        width: 220px;
+                        height: 40px;
+                        margin-left: 0;
+                        .target_plus{
+                            width: 40px;
+                            height: 40px;
+                            right: 0;
+                            .target_plus_item{
+                            &::after{
+                                content: "";
+                                display: block;
+                                top: 10px;
+                                left: 20px;
+                            }
+                            &::before{
+                                content: "";
+                                display: block;
+                                left: 10px;
+                                top: 20px;
+                            }
+                            }
+                        }
+                    }
+                }
+                .center{
+                    .two_item{
+                        .item_text_two{
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .right{
+                    text-align: center;
+                    margin: 50px 50px;
+                    .right_text_3{
+                        margin: 0 50px;
+                    }
+                    .right_button{
+                        margin-left:0 ;
+                    &::before{
+                        content: "";
+                        display: none;
+                    }
+                        a{
+                            left: 15px;
+                            bottom: 0;
+                        }    
+                    }
+                }
+            }    
+        }
+    }
+}        
