@@ -200,11 +200,14 @@
                             white-space: nowrap;
                             text-overflow: ellipsis;
                         }
+                        .date{
+                            bottom: 25px;
+                        }
                     }
                 }
                 .right{
                     text-align: center;
-                    margin: 50px 50px;
+                    margin-top: 30px;
                     .right_text_3{
                         margin: 0 50px;
                     }
