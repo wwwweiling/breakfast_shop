@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <title>ComeCome</title>
+</head>
+<body>
+    <header class="container">
+        @@include('include/nav.html')
+        <div class="banner">
+                <div class="banner_food"></div>
+        </div>
+    </header>
+        <div class="main container">
+            <div class="online_wrap">
+                <div class="online_one">
+                    <a href="#">線上點餐</a>
+                    <a href="#">線上菜單</a>
+                </div>    
+                <div class="online_two" data-aos="fade-up">
+                    <div class="left">
+                        <div class="left_img"><a href="#"></a></div>
+                    </div>
+                    <div class="right">
+                        <div class="right_top">不管你睡的多晚起的多晚<br>晨之美永遠在這裡歡迎光臨</div>
+                        <div class="right_bottom">美好的早晨就是要來一份不一樣的早點<br>讓人吃了神清氣爽讚不絕口的好滋味</div>
+                    </div>
+                </div>
+                <div class="online_three" data-aos="fade-up">
+                    <div class="left">
+                        <div class="left_img"><a href="#"></a></div>
+                    </div>
+                    <div class="right">
+                        <div class="food_top">招牌薯餅蛋吐司</div>
+                        <div class="food_bottom">超人氣餐點，搭配獨門醬汁+酥脆吐司不點可以嗎？</div>
+                        <div class="button"><a href="#">查看更多</a></div>
+                    </div>
+                </div>
+                <div class="online_four">
+                    <!--學習用@@包*3-->
+                    @@include('include/online_four.html',{
+                    "wow":"fadeInLeft",
+                    "delay":"0.1s",
+                    "duration":"0.2s",
+                    "img":"../img/food3.jpg",
+                    "name":"花生牛肉蛋吐司",
+                    "item":"山型鮮奶厚片土司為底，鋪上滿満配料，整片烘烤成金黃色，讓人食指大動。"})
+                    @@include('include/online_four.html',{
+                    "wow":"fadeInLeft",
+                    "delay":"0.3s",
+                    "duration":"0.6s",
+                    "img":"../img/food6.png",
+                    "name":"招牌美式漢堡",
+                    "item":"由超高人氣的漢堡領軍，各式新鮮蔬菜及豐富餡料製作，一口咬下肉香四溢。"})
+                    @@include('include/online_four.html',{
+                    "wow":"fadeInLeft",
+                    "delay":"0.5s",
+                    "duration":"0.8s",                        
+                    "img":"../img/food5.png",
+                    "name":"蘇食營養沙拉套餐",
+                    "item":"新鮮乾淨生菜組合，鋪上滿満配料，讓人一口皆一口停不下來。"})
+                </div>
+            </div>
+            <div class="news container">
+                <div class="news_wrap">
+                    <div class="news_inner">
+                        <div class="left">
+                            <div class="target_wrap">
+                                <div class="target">最新消息</div>
+                                <div class="target_plus">
+                                    <a class="target_plus_item"href="#"></a>
+                                    <div class="target_plus_block"><a href="#">更多消息</a></div>
+                                </div>
+                            </div>
+                        </div>    
+                                    <!--學習用@@包*8一次2張共8張輪播圖-->
+                        <div class="center" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                            @@include('include/news.html')
+                            @@include('include/news.html')
+
+                        </div>
+                        <div class="right" data-aos="fade-up">
+                            <div class="right_text_1">ComeCome</div>
+                            <div class="right_text_2">睡飽，就該吃的好</div>
+                            <div class="right_text_3">提供在食物與環境上，都是值得珍藏的好味道！多元口味、套餐，讓早起吃早餐這一件再日常不過的小事，都夠能成為一種流行符號。</div>
+                            <div class="right_button"><a href="#" class="hvr-sweep-to-right">更認識我們<a></div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    <footer class="container">
+        @@include('include/footer.html')
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>      
+        <script src="js/main.js"></script>
+</body>
+</html>
