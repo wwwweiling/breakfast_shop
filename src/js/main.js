@@ -15,18 +15,11 @@ document.addEventListener("scroll",function(event){
 
     }
 
-  });
+    })
 
-//   function feedIn(){
-//     document.getElementById("right").style.transform = "translateX(0%)";
-//   }
-
-//   document.addEventListener("click",feedIn()){
-
-//   }
-
-let check = document.getElementsByClassName("nav_mobile");
-check.addEventListener("click",right());
-function right() {
-    document.getElementById("right").style.transform = "translateX(0%)";
-}
+    let check = document.getElementById("check");
+    let right = document.getElementById("right");
+    
+    check.addEventListener("click", function(){
+      right.classList.toggle("right2");  
+    })
