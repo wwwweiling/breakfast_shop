@@ -1,0 +1,60 @@
+.two_item{
+    margin-left: 20px;
+    position: relative;
+    .item_zoom{
+        .news_img{
+            width:280px;
+            height:280px;
+            overflow: hidden;
+            a{
+                display: block;
+                background-image: url(../img/food2.jpg);
+                width: 100%;
+                height:100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .date{
+        background:$color3;
+        color: white;
+        display: inline-block;
+        padding: 5px 20px;
+        position: absolute;
+        bottom: 55px;
+    }
+    .item_text_two{
+        //使用JQUREY使其顯示兩行
+        width: 280px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+    }    
+}
+
+.news_right{
+    .right_wrap{
+        .news_item2{
+            margin-left: 0;
+            width: 300px;
+            .news_img2{
+                height:300px ;
+                width:100% ;
+            }
+        }
+        .news_item{
+            .item_text_two{
+                line-height: 20px ;
+                overflow: hidden;
+                display: -webkit-box;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                white-space: normal;
+                margin-bottom: 10px;
+            }
+        }
+    }   
+}
