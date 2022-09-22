@@ -1,0 +1,124 @@
+@import "_var";
+@import "_nav";
+@import "_footer";
+
+body{
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+header{
+    .contact_wrap{
+        .contact_text{
+            text-align: center;
+            background: antiquewhite;
+            line-height: 30px;
+            .contact_text2{
+                font-size: 30px;
+                letter-spacing: 3px;
+                padding: 10px 0;
+            }
+            span{
+                font-size: 14px;
+                letter-spacing: 1px;
+                a{
+                    color: $color1;
+                }
+            }
+            .span_hover:hover{
+                color: #82ac84;
+            }
+        }
+    }
+}
+.contact_main{
+    .contact_left{
+        display: inline-block;
+        float: left;
+        padding: 20px;
+        .left_wrap{
+            width: 200px;
+            height: 200px;
+            .left-img{
+                background-image: url(../img/news1.svg);
+                width: 100%;
+                height:100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .left-text{
+                border: 1px solid $color1;
+                padding: 10px;
+                margin: 5px;
+                a{
+                    font-weight: 600;
+                    color: #7aa57e;
+                    letter-spacing: 2px;
+                    display: block;
+                }
+            &:hover{
+                color: $color3;
+                border-color: black;
+                background-color: rgb(241, 241, 241);
+            }    
+            }
+        }
+    }
+    .contact_right{
+        padding-left: 300px;
+        width: calc(100% - 100px);  
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-top: 30px;
+        .contact_text{
+            div{
+                font-size: 20px;
+                letter-spacing: 3px;
+                padding-top: 10px;
+            }
+            .text_bold{
+                font-size: 40px;
+                font-weight: bolder;
+                }
+        }
+        .contact_wrap{
+            .from_body{
+                background-color: #e5f5e7;
+                margin-top: 30px;
+                .from_top{
+                    padding: 15px 30px;
+                    border-bottom: 1px solid #FFFFFF;
+                    .text1{
+                        font-size: 30px;
+                        font-weight: bold;
+                        display: inline-block;
+                        padding-bottom: 10px;
+                        color:#436c44;
+                    }
+                    .text2{
+                        font-size: 14px;
+                        display: inline-block;
+
+                    }
+                }
+                .from_main{
+                    .label{
+                        position: relative;
+                        padding: 10px;
+                        display: block;
+                        font-size: 16px;
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        border-radius: 100%;
+                        width: 5px;
+                        height: 5px;
+                        background-color: #436c44;
+                        margin: 3px;                    }
+                    }
+                }
+            }
+        }
+    }
+}
