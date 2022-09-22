@@ -23,3 +23,20 @@ document.addEventListener("scroll",function(event){
     check.addEventListener("click", function(){
       right.classList.toggle("right2");  
     })
+    
+    // var hvr = document.querySelectorAll(".hvr-grow");
+    // for(var i=0;i<hvr.length;i++){
+    //     hvr.addEventListener("mouseover",function(){
+    //     document.querySelector("#hover").classList.add("hover")
+    //     })
+    // hvr.addEventListener("mouseout",function(){
+    //     document.querySelector("#hover").classList.remove("hover")
+    //     })    
+    // }
+        var hvr = document.querySelector(".hvr-grow");
+        hvr.addEventListener("mouseover",function(){
+        document.querySelector("#hover").classList.add("hover")
+        })
+        hvr.addEventListener("mouseout",function(){
+        document.querySelector("#hover").classList.remove("hover")
+        })    

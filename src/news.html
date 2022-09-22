@@ -20,7 +20,7 @@
                 <div class="new_text2">最新消息</div>
                 <span><a class="span_hover" href="index.html">HOME</a></span>
                 <span>/</span>
-                <span><a class="span_hover" href="#">新訊</a></span>
+                <span><a class="span_hover" href="news.html">新訊</a></span>
             </div>
         </div>
     </header>
@@ -38,6 +38,9 @@
             <div class="right_wrap">
                 @@for (var i = 0; i < 12; i++) {
                     @@include('include/news.html',{
+                    "wow" : "fadeIn",
+                    "delay" : "0.`+(i)+`s",
+                    "duration" : "1s"        
                     })            
                 }
             </div>
@@ -46,8 +49,10 @@
     <footer class="container">
         @@include('include/footer.html')
     </footer>
-    
-    
-        <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>     
+    <script src="js/main.js"></script>
 </body>
 </html>

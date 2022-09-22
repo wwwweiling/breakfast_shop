@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>ComeCome</title>
+</head>
+<body>
+    <header class="container">
+        @@include('include/nav.html')
+        <div class="menu_wrap">
+            <div class="menu_text">
+                <div class="menu_text2">餐點</div>
+                <span><a class="span_hover" href="index.html">HOME</a></span>
+                <span>/</span>
+                <span><a class="span_hover" href="#">餐點</a></span>
+            </div>
+        </div>
+    </header>
+    <div class="menu_main container">
+        <div class="menu_left">
+            <div class="left_wrap">
+                <div class="left-img"></div>
+                <div class="left-text"><a href="#">小資族套餐組合</a></div>
+                <div class="left-text"><a href="#">大胃王套餐組合</a></div>
+                <div class="left-text"><a href="#">你在找的全品項</a></div>
+            </div>
+        </div>
+        <div class="menu_right">
+            <div class="online_four">
+                @@for(var i = 0 ;i < 12; i++){
+                    @@include('include/online_four.html',{                    "wow" : "fadeIn",
+                    "img" :"img/food3.jpg",
+                    "wow" : "fadeIn",
+                    "delay" : "0.`+(i)+`s",
+                    "duration" : "1s",
+                    "name":"花生牛肉蛋吐司",
+                    "item":"山型鮮奶厚片土司為底，鋪上滿満配料，整片烘烤成金黃色，讓人食指大動。"        
+                    })
+                }            
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        @@include('include/footer.html')
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>     
+    <script src="js/main.js"></script>
+</body>
+</html>
