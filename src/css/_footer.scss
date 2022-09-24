@@ -14,6 +14,7 @@ footer{
                 font-size: 16px;
                 letter-spacing: 2px;
                 line-height: 30px;
+                white-space: nowrap;
             }
         }
         .footer_center{
@@ -22,7 +23,7 @@ footer{
             line-height: 30px;
             a{
                 display: block;
-                font-size: 25px;
+                font-size: 30px;
                 font-weight: bold;
             }
             div{font-size: 14px;}
@@ -63,4 +64,12 @@ footer{
               }
         }
     }
+}
+
+@media (max-width:762px) {
+  footer{
+    .footer_wrap{
+      flex-direction: column;
+    }
+  }  
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>ComeCome</title>
+</head>
+<body>
+    <header class="container">
+        @@include('include/nav.html')
+        <div class="store_wrap">
+            <div class="store_text">
+                <div class="store_text2">門市據點</div>
+                <span><a class="span_hover" href="index.html">HOME</a></span>
+                <span>/</span>
+                <span><a class="span_hover" href="#">門市</a></span>
+            </div>
+        </div>
+    </header>
+    <div class="store_main container">
+        <div class="store_left">
+            <div class="left_wrap">
+                <div class="left-img"></div>
+                <div class="left-text"><a href="#">小資族套餐組合</a></div>
+                <div class="left-text"><a href="#">大胃王套餐組合</a></div>
+                <div class="left-text"><a href="#">你在找的全品項</a></div>
+            </div>
+        </div>
+        <div class="stroe_right">
+            <div class="search_wrap">
+                <div class="icon">
+                    <div class="icon_img"></div>
+                </div>
+                <div>依行政區搜尋</div>
+                <select class="form-control" name="form" id="form">
+                    <option>請選擇</option>
+                    <option value="1">鳳山區</option>
+                    <option value="2">鹽埕區</option>
+                    <option value="3">前鎮區</option>
+                    <option value="4">前金區</option>
+                    <option value="5">三民區</option>
+                    <option value="6">大寮區</option>
+                </select>
+                <input type="submit" value="搜尋" class="btn_search">
+            </div>
+            <div class="search_map">
+                <div class="search_map_wrap">
+                    @@for (var i = 0; i < 6; i++) {
+                        @@include('include/map.html',{
+                        "wow" : "fadeIn",
+                        "delay" : "0.`+(i)+`s",
+                        "duration" : "1s",  
+                        "name":"鳳山青年店",
+                        "adress":"青年路2段1號",
+                        "tel":"7355-551"      
+                        })            
+                    }
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <footer class="container">
+        @@include('include/footer.html')
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>     
+    <script src="js/main.js"></script>
+</body>
+</html>

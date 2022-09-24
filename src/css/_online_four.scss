@@ -40,11 +40,11 @@
     }
 }    
 
-@media (max-width:992px) {
-    .online_four{
-     flex-direction: column;
-    }
-}
+// @media (max-width:992px) {
+//     .online_four{
+//      flex-direction: column;
+//     }
+// }
 
 .menu_right{
     .online_four{
@@ -53,6 +53,8 @@
         flex-wrap: wrap;
         .online_four_wrap{
         margin: 20px 0;
+        flex-basis: 20px;
+        flex: 0;
         }
         .item_img{
             width: 350px;
@@ -94,7 +96,7 @@
         
     }
 }
-.hover{
+.hover2{
     background-color: $color1;
     padding: 5px 20px;
     opacity: 0.8;
