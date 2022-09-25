@@ -72,10 +72,78 @@ header{
     }
     .store_right{
         padding-left: 300px;
-        // width: calc(100% - 100px);  
-        // font-size: 20px;
-        // letter-spacing: 3px;
-        // margin-top: 30px;
+        padding-top: 30px;
+        .search_wrap{
+            padding: 60px;
+            margin: 50px;
+            border: 1px solid $color1;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            .icon{
+                width: 100px;
+                height: 100px;
+                background:#e1f0e2;
+                border-radius: 100%;
+                position: absolute;
+                top: -50px;
+                left: 42%;
+                .icon_img{
+                    width: 50px;
+                    height: 50px;
+                    border: 5px solid #91b493;
+                    border-radius: 100%;
+                    position: relative;
+                    left: 15px;
+                    top: 20px;
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 5px;
+                    height: 25px;
+                    background: #91b493;
+                    position: absolute;
+                    right: -10px;
+                    top: 30px;
+                    rotate: -45deg;
+                }    
+                }
+                
+            }
+            .area{
+                font-size: 20px;
+                letter-spacing: 5px;
+                padding: 20px 0;
+            }
+            .form{
+                position: relative;
+                .form-control{
+                    width: 20vw;
+                    height: 45px;
+                    border-color:#cce9cd ;
+                    border-right: none;
+                    padding-left: 10px;
+                }
+                .btn_wrap{
+                    display: inline-block;
+                    position: absolute;
+                    .btn_search{
+                        width: 80px;
+                        height: 45px;
+                        background: #e1f0e2;
+                        border:1px solid #cce9cd;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .search_map{
+            .search_map_wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-evenly;
+            }
+        }
     }    
 }
 
@@ -91,6 +159,9 @@ header{
     .store_main{
         .store_left{
             display: none;
+        }
+        .store_right{
+            padding-left:0;
         }
     }            
 }

@@ -1,6 +1,6 @@
 .two_item{
-    margin-left: 20px;
     position: relative;
+    padding-bottom: 30px;
     .item_zoom{
         .news_img{
             width:280px;
@@ -8,7 +8,7 @@
             overflow: hidden;
             a{
                 display: block;
-                background-image: url(../img/food2.jpg);
+                // background-image: url(../img/food2.jpg);
                 width: 100%;
                 height:100%;
                 background-position: center;
@@ -17,21 +17,47 @@
             }
         }
     }
-
-//     .date{
-//         background:$color3;
-//         color: white;
-//         display: inline-block;
-//         padding: 5px 20px;
-//         position: absolute;
-//         bottom: 55px;
-//     }
-//     .item_text_two{
-//         //使用JQUREY使其顯示兩行
-//         width: 280px;
-//         margin-top: 20px;
-//         letter-spacing: 1px;
-//     }    
+    .name{
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+    .adress,.tel{
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .more{
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width:80px;
+        height: 2px;
+        background-color: $color1;
+        position: absolute;
+        right: 0;
+        top: 15px;
+    }
+    &::before{
+        content: "";
+        display: block;
+        width:80px;
+        height: 2px;
+        background-color: $color1;
+        position: absolute;
+        left: 0;
+        top: 15px;
+    }
+    .hover:hover{
+        background:$color1;
+        padding: 5px 25px;
+        color: white;
+    }   
+    }
 }
 
 .hvr-grow:hover{
